@@ -6,7 +6,8 @@
 - baking powder
 - salt 
 - vegetable oil 
-- an egg, milk 
+- an egg 
+- milk 
 - fresh blueberries
 - white sugar
 - butter
