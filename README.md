@@ -9,7 +9,6 @@
 - an egg 
 - milk 
 - fresh blueberries
-- white sugar
 - butter
 - cinnamon
 
