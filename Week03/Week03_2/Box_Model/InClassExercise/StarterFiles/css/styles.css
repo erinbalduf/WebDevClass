@@ -1,0 +1,51 @@
+/* We write this together in class.
+
+   You will need:
+     .gallery-inclass
+     .gallery-item-inclass  (display: inline-block, plus a fix for the
+                              whitespace gap between cards)
+*/
+/*universal selector to zero out margins and paddings on all tags*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*applies a default font family for every tag inside the body tag to have*/
+body {
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(237,160,70);
+  /*come back for the gotcha*/
+  /*we zero out the font size of the parent element (container) so there is literally zero space between our letters.
+  when you zero out a font for inline block, dont forget to bring it back in the child element.*/
+  font-size: 0;
+}
+
+li {
+  /*li display block by default. that means they want to take up 100% of the horizontal space that they can. and not share horizontal space with any other elements*/
+  display:inline-block;
+  /*background-color: aqua;*/
+  font-size: 1rem;
+  width:100px;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  /*top, right, bottom, left: padding: 10px, 5px, 4px, 8px;
+*/
+  text-decoration: none;
+  color:darkblue;
+  
+}
+
+li a:hover {
+  background-color: rgba(255,255,255,0.55);
+}
