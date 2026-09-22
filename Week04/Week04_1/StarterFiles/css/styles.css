@@ -1,0 +1,104 @@
+/* We write this together in class. */
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #555;
+}
+
+/* every div on the page, so we can SEE our boxes while we work */
+div {
+  background-color: rgba(0, 0, 200, 0.1);
+}
+
+/* ---------- nav bar ---------- */
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #006fff;
+  /*when u zero out the parent of an inline element, dont forget to reassign the font size to the child*/
+  font-size: 16px;
+  /*zeroing out margin wont get rid of the space between words*/
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ---------- photo grid, fixed pixels ---------- */
+.gallery {
+  width: 900px;
+  margin: 0 auto; /*top and bottom 0, center left and right*/
+  padding: 10px;
+  /*this is the parent of inline block elements so we zero it out*/
+  font-size: 0;
+}
+
+.gallery-item {
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+}
+
+.gallery-item-border {
+  display: inline-block;
+  font-size: 16px;
+  width: 190px;
+  height: 130px; 
+  border: 5px solid #006FFF;
+}
+
+.gallery-item-padding {
+  display: inline-block;
+  font-size: 13px;
+  width: 150px; /*150 + 5 LB +5 RB +20 padding*/
+  height: 150px;
+  border: 5px solid #006FFF;
+  padding: 20px;
+}
+
+.gallery-fluid {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2%;
+  font-size: 0;
+}
+
+.gallery-item-fluid {
+  display: inline-block;
+  font-size: 16px;
+  width: 21%;
+  /*percentages for height only work if its parent has a fixed dimension*/
+  /*height: 10%;*/
+  height: 160px;
+  margin: 0 2%;
+  /*border: 2px solid red;*/
+
+}
+
+/*padding, margin, and border dimensions need to be added to width when calculating how many fit*/
+
+.gallery-inclass {
+  width:900px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 0;
+}
+
+.gallery-item-inclass {
+  display: inline-block;
+  font-size: 16px;
+  width: 205px;
+  height: 205px;
+  margin: 0 10px;
+}

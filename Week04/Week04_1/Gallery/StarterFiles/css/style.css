@@ -1,0 +1,54 @@
+/*load the font first in this stylesheet*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+/*
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*add custom font as the default font for the page*/
+html {
+    font-family: "Kaushan Script", cursive;
+/*declare and use a full size image bg*/
+background: url('../img/bg.jpg') no-repeat center center fixed;
+background-size: cover;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    /*this is a container for elements we want to stack using inline block. so we need to 0 out the font size*/
+    font-size: 0;
+}
+
+.polaroid {
+    width: 260px;
+    margin: 20px;
+    /*260+20+20 = 300 which stacks beautifully into our 90px*/
+    display:inline-block;
+}
+
+/*descendent selector is looking for a specific pattern of elements*/
+/*targets only the images inside of polaroid*/
+.polaroid img {
+    /*this is a common style for the img tag everywhere. the patter is to make the img 100% the width of its parent. then size the parent*/
+    width: 100%;
+    height: auto;
+    border: 10px solid #CCC;
+    border-bottom-width: 45px;
+}
+
+.polaroid p {
+    font-size: 1rem; /*16px*/
+
+}
